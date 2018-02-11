@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blogspot.vayalumvazhvum.activity.InputReadWebviewActivity"
+    tools:showIn="@layout/activity_input_read_webview">
+
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="450.0">
+
+            <WebView android:id="@+id/inputRead" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+
+            </WebView>
+
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/inputTempo"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="35.0">
+            <ImageView android:id="@+id/inputPrev" android:layout_width="0.0dip" android:background="@drawable/layout_whiteselector" android:layout_height="wrap_content" android:src="@mipmap/prev" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/inputPlay" android:layout_width="0.0dip" android:background="@drawable/layout_whiteselector" android:layout_height="wrap_content" android:src="@mipmap/play" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/inputPause" android:layout_width="0.0dip" android:background="@drawable/layout_whiteselector" android:layout_height="wrap_content" android:src="@mipmap/pause" android:layout_weight="1.0" />
+            <ImageView android:id="@+id/inputNext" android:layout_width="0.0dip" android:background="@drawable/layout_whiteselector" android:layout_height="wrap_content" android:src="@mipmap/next" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

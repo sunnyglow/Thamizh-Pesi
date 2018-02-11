@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.vayalumvazhvum.activity.ExtendedReadModeActivity">
+
+
+
+    <include layout="@layout/content_extended_read_mode" />
+
+
+
+  <!--  <android.support.design.widget.FloatingActionButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@android:color/black"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_media_play"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@android:color/black"
+        app:srcCompat="@android:drawable/ic_media_pause" />-->
+</android.support.design.widget.CoordinatorLayout>

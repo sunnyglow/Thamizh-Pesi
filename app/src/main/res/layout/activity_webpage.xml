@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="50.0">
+        <RelativeLayout android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText android:layout_gravity="center_vertical" android:id="@id/url_editttext" android:background="@drawable/newbackground" android:paddingLeft="10.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="Please input url here." android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionGo" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/clear_webpage_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@mipmap/w_close" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="6.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="6.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageView45" android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="500.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/webpagelayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="450.0">
+                <ProgressBar android:id="@id/webpage_progressBar" android:layout_width="fill_parent" android:layout_height="4.0dip" style="?android:attr/progressBarStyleHorizontal" />
+                <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_webpage_layout" android:background="#673ab7" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="50.0">
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/webpage_back_iv" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/read_back" android:layout_weight="2.0" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@id/back_webpage_area" android:background="@drawable/layout_whiteselector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/webpage_prev_iv" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/w_prev" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@id/prev_webpage_area" android:background="@drawable/layout_whiteselector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/webpage_next_iv" android:layout_width="wrap_content" android:background="@drawable/layout_whiteselector" android:layout_height="wrap_content" android:src="@mipmap/w_next" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@id/next_webpage_area" android:background="@drawable/layout_whiteselector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <ImageView android:id="@id/webpage_listennow_iv" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/listen" android:layout_weight="2.0" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@id/listennow_webpage_area" android:background="@drawable/layout_whiteselector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/historylayout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/webpage_history_listView" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

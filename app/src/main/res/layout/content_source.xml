@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout android:orientation="vertical"  android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+       <!-- <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/appname" />-->
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+<!--
+                    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_new_title_1" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+-->
+                    <RelativeLayout
+                        android:id="@id/input_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                         />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                        <ImageView android:id="@+id/input" android:layout_width="wrap_content" android:background="@drawable/layout_whiteselector" android:layout_height="wrap_content" android:src="@mipmap/input" android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@+id/input"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3.0dip"
+                            android:text="உள்ளீடு" />
+
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/browseWeb" android:visibility="visible"  android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/add_web" android:layout_centerInParent="true" />
+                        <TextView android:id="@id/textView4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="இணையம்" android:layout_below="@+id/browseWeb" android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+<!--
+                    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_new_title_3" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+-->
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                        <ImageView android:id="@+id/htmlView" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/html" android:layout_centerInParent="true" />
+                        <TextView android:id="@id/textView48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="HTML கோப்பு" android:layout_below="@id/htmlView" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+
+                        <RelativeLayout
+                            android:id="@id/explorer_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true">
+
+                            <RelativeLayout
+                                android:id="@id/onedrive_area"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="128dp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/txt" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/text" android:layout_centerInParent="true" />
+                        <TextView android:id="@id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text=" TXT கோப்பு" android:layout_below="@id/txt" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                        <RelativeLayout android:id="@id/sync_area"  android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical"  android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                        <ImageView android:id="@+id/share" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="false" />
+                        <TextView android:id="@+id/shareText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="பகிர்" android:layout_below="@id/share" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                        <RelativeLayout android:id="@id/dropbox_area"  android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                        <ImageView android:id="@+id/like" android:background="@drawable/layout_whiteselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/like" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="false" />
+                        <TextView android:id="@id/textView51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="வாழ்த்து" android:layout_below="@id/like" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                      <!-- <ImageView android:id="@id/onedrivebtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/word" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="false" />
+                        <TextView android:id="@id/textView51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="Word" android:layout_below="@id/onedrivebtn" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" />
+
+          -->
+                        <RelativeLayout
+                            android:id="@id/webpage_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="205dp"
+                            android:layout_marginStart="29dp" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+<!--
+                        <ImageView
+                            android:id="@id/onedrivebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/textView51"
+                            android:layout_alignWithParentIfMissing="false"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/like" />-->
+<!--
+                        <TextView android:id="@id/textView51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="About Us" android:layout_below="@id/onedrivebtn" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" />
+-->
+
+                   </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>
